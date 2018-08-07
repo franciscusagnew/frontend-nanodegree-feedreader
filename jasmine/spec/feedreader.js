@@ -56,9 +56,8 @@ $(function() {
         beforeEach(function() {
             menu = $('body');
             defaultStatus = menu.hasClass('menu-hidden');
-            console.log(defaultStatus);
-            displayMenu = menu.toggleClass('menu-hidden', false).hasClass('menu-hidden');
-            hideMenu = menu.toggleClass('menu-hidden', true).hasClass('menu-hidden');
+            displayMenu = menu.toggleClass('menu-hidden').hasClass('menu-hidden');
+            hideMenu = menu.toggleClass('menu-hidden').hasClass('menu-hidden');
         });
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
@@ -74,6 +73,10 @@ $(function() {
          * should have two expectations: does the menu display when
          * clicked and does it hide when clicked again.
          */
+         it('does menu visibility change when menu icon is clicked', function() {
+            expect(displayMenu).toBe(false);
+            expect(hideMenu).toBe(true);
+        });
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */

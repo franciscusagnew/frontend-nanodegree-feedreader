@@ -51,21 +51,22 @@ $(function() {
 
     /* TODO: Write a new test suite named "The menu" */
     describe('The Menu', function() {
-        var menu, defaultStstus, displayMenu, hideMenu;
+        var menu, defaultStatus, displayMenu, hideMenu;
 
         beforeEach(function() {
             menu = $('body');
             defaultStatus = menu.hasClass('menu-hidden');
+            console.log(defaultStatus);
             displayMenu = menu.toggleClass('menu-hidden', false).hasClass('menu-hidden');
             hideMenu = menu.toggleClass('menu-hidden', true).hasClass('menu-hidden');
-        })
+        });
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
         it('is menu hidden by default', function() {
-            expect(defaultStstus).toBe(true);
+            expect(defaultStatus).toBe(true);
         });
 
         /* TODO: Write a test that ensures the menu changes

@@ -10,6 +10,6 @@ Whether you work in an organization that uses test-driven development or in an o
 
 Jasmine uses what is known as "behavior driven development" (BDD) to write a number of tests against a pre-existing application. It will test the underlying business logic of the application as well as the event handling and DOM manipulation.
 
-# How To Run:
+## How To Run:
 
 Simply download or clone this project to your local environment and open the "index.html" file within your browser to run the Jasmine test within your browser.
